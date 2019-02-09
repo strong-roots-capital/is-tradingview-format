@@ -22,8 +22,7 @@ export default function isTradingviewFormat(session: string): boolean {
         [/^H$/, () => true],
         [/^D$/, () => true],
         [/^W$/, () => true],
-        [/^M$/, () => true],
-        ]
+        [/^M$/, () => true]]
 
     for (const [regex, isValid] of tests) {
         if (regex.test(session))
