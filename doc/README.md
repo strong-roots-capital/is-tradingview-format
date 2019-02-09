@@ -54,7 +54,7 @@ isTradingviewFormat('25H')
 
 ▸ **isTradingviewFormat**(session: *`string`*): `boolean`
 
-*Defined in [is-tradingview-format.ts:14](https://github.com/strong-roots-capital/is-tradingview-format/blob/d378a48/src/is-tradingview-format.ts#L14)*
+*Defined in [is-tradingview-format.ts:14](https://github.com/strong-roots-capital/is-tradingview-format/blob/d47d9f2/src/is-tradingview-format.ts#L14)*
 
 Return true if `session` is a timeframe expressed in valid Trading View format.
 
