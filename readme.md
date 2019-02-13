@@ -38,3 +38,25 @@ isTradingviewFormat('1H')
 isTradingviewFormat('25H')
 //=> false
 ```
+
+Functions are also provided for testing if a session is a timeframe
+expressed in minutes, in hours, in days, in weeks, or in months
+
+``` typescript
+import isTradingviewFormat, {
+    isTradingviewFormatMonths
+    isTradingviewFormatWeeks
+    isTradingviewFormatDays
+    isTradingviewFormatHours
+    isTradingviewFormatMinutes
+} from '../src/is-tradingview-format'
+
+isTradingviewFormatHours('H')
+//=> true
+
+isTradingviewFormatHours('10)
+//=> false
+
+isTradingviewFormat('1D')
+//=> false
+```
