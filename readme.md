@@ -54,7 +54,7 @@ import isTradingviewFormat, {
 isTradingviewFormatHours('H')
 //=> true
 
-isTradingviewFormatHours('10)
+isTradingviewFormatHours('10')
 //=> false
 
 isTradingviewFormat('1D')
