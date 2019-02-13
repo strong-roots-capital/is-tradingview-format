@@ -49,7 +49,7 @@ import isTradingviewFormat, {
     isTradingviewFormatDays
     isTradingviewFormatHours
     isTradingviewFormatMinutes
-} from '../src/is-tradingview-format'
+} from '@strong-roots-capital/is-tradingview-format'
 
 isTradingviewFormatHours('H')
 //=> true
