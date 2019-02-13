@@ -38,11 +38,37 @@ isTradingviewFormat('25H')
 //=> false
 ```
 
+Functions are also provided for testing if a session is a timeframe expressed in minutes, in hours, in days, in weeks, or in months
+
+```typescript
+import isTradingviewFormat, {
+    isTradingviewFormatMonths
+    isTradingviewFormatWeeks
+    isTradingviewFormatDays
+    isTradingviewFormatHours
+    isTradingviewFormatMinutes
+} from '../src/is-tradingview-format'
+
+isTradingviewFormatHours('H')
+//=> true
+
+isTradingviewFormatHours('10)
+//=> false
+
+isTradingviewFormat('1D')
+//=> false
+```
+
 ## Index
 
 ### Functions
 
 * [isTradingviewFormat](#istradingviewformat)
+* [isTradingviewFormatDays](#istradingviewformatdays)
+* [isTradingviewFormatHours](#istradingviewformathours)
+* [isTradingviewFormatMinutes](#istradingviewformatminutes)
+* [isTradingviewFormatMonths](#istradingviewformatmonths)
+* [isTradingviewFormatWeeks](#istradingviewformatweeks)
 
 ---
 
@@ -54,7 +80,7 @@ isTradingviewFormat('25H')
 
 ▸ **isTradingviewFormat**(session: *`string`*): `boolean`
 
-*Defined in [is-tradingview-format.ts:14](https://github.com/strong-roots-capital/is-tradingview-format/blob/d47d9f2/src/is-tradingview-format.ts#L14)*
+*Defined in [is-tradingview-format.ts:14](https://github.com/strong-roots-capital/is-tradingview-format/blob/83348c5/src/is-tradingview-format.ts#L14)*
 
 Return true if `session` is a timeframe expressed in valid Trading View format.
 
@@ -66,6 +92,111 @@ Return true if `session` is a timeframe expressed in valid Trading View format.
 
 **Returns:** `boolean`
 True if `session` is expressed in valid Trading View format.
+
+___
+<a id="istradingviewformatdays"></a>
+
+###  isTradingviewFormatDays
+
+▸ **isTradingviewFormatDays**(session: *`string`*): `boolean`
+
+*Defined in [is-tradingview-format.ts:86](https://github.com/strong-roots-capital/is-tradingview-format/blob/83348c5/src/is-tradingview-format.ts#L86)*
+
+Return true if `session` is a daily timeframe expressed in valid Trading View format.
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| session | `string` |  Timeframe under test |
+
+**Returns:** `boolean`
+True if `session` is a daily timeframe expressed in valid
+Trading View format.
+
+___
+<a id="istradingviewformathours"></a>
+
+###  isTradingviewFormatHours
+
+▸ **isTradingviewFormatHours**(session: *`string`*): `boolean`
+
+*Defined in [is-tradingview-format.ts:109](https://github.com/strong-roots-capital/is-tradingview-format/blob/83348c5/src/is-tradingview-format.ts#L109)*
+
+Return true if `session` is an hourly timeframe expressed in valid Trading View format.
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| session | `string` |  Timeframe under test |
+
+**Returns:** `boolean`
+True if `session` is an hourly timeframe expressed in valid
+Trading View format.
+
+___
+<a id="istradingviewformatminutes"></a>
+
+###  isTradingviewFormatMinutes
+
+▸ **isTradingviewFormatMinutes**(session: *`string`*): `boolean`
+
+*Defined in [is-tradingview-format.ts:132](https://github.com/strong-roots-capital/is-tradingview-format/blob/83348c5/src/is-tradingview-format.ts#L132)*
+
+Return true if `session` is a minutes-long timeframe expressed in valid Trading View format.
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| session | `string` |  Timeframe under test |
+
+**Returns:** `boolean`
+True if `session` is a minutes-long timeframe expressed in
+valid Trading View format.
+
+___
+<a id="istradingviewformatmonths"></a>
+
+###  isTradingviewFormatMonths
+
+▸ **isTradingviewFormatMonths**(session: *`string`*): `boolean`
+
+*Defined in [is-tradingview-format.ts:40](https://github.com/strong-roots-capital/is-tradingview-format/blob/83348c5/src/is-tradingview-format.ts#L40)*
+
+Return true if `session` is a monthly timeframe expressed in valid Trading View format.
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| session | `string` |  Timeframe under test |
+
+**Returns:** `boolean`
+True if `session` is a monthly timeframe expressed in valid
+Trading View format.
+
+___
+<a id="istradingviewformatweeks"></a>
+
+###  isTradingviewFormatWeeks
+
+▸ **isTradingviewFormatWeeks**(session: *`string`*): `boolean`
+
+*Defined in [is-tradingview-format.ts:63](https://github.com/strong-roots-capital/is-tradingview-format/blob/83348c5/src/is-tradingview-format.ts#L63)*
+
+Return true if `session` is a weekly timeframe expressed in valid Trading View format.
+
+**Parameters:**
+
+| Name | Type | Description |
+| ------ | ------ | ------ |
+| session | `string` |  Timeframe under test |
+
+**Returns:** `boolean`
+True if `session` is a weekly timeframe expressed in valid
+Trading View format.
 
 ___
 
