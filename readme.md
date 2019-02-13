@@ -57,6 +57,6 @@ isTradingviewFormatHours('H')
 isTradingviewFormatHours('10')
 //=> false
 
-isTradingviewFormat('1D')
+isTradingviewFormatHours('1D')
 //=> false
 ```
