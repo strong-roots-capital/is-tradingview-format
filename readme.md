@@ -65,7 +65,7 @@ isTradingviewFormatHours('1D')
 //=> false
 ```
 
-## Input validation with `ow`
+### Input validation with `ow`
 
 A convenience function is provided for validating input with
 [ow](https://github.com/sindresorhus/ow)
