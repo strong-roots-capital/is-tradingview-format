@@ -44,10 +44,10 @@ expressed in minutes, in hours, in days, in weeks, or in months
 
 ``` typescript
 import isTradingviewFormat, {
-    isTradingviewFormatMonths
-    isTradingviewFormatWeeks
-    isTradingviewFormatDays
-    isTradingviewFormatHours
+    isTradingviewFormatMonths,
+    isTradingviewFormatWeeks,
+    isTradingviewFormatDays,
+    isTradingviewFormatHours,
     isTradingviewFormatMinutes
 } from '@strong-roots-capital/is-tradingview-format'
 
@@ -59,4 +59,21 @@ isTradingviewFormatHours('10')
 
 isTradingviewFormatHours('1D')
 //=> false
+```
+
+A convenience function is provided for validating input with
+[ow](https://github.com/sindresorhus/ow)
+
+``` typescript
+import ow from 'ow'
+import { inTradingviewFormat } from '@strong-roots-capital/is-tradingview-format'
+
+ow(session, ow.string.is(inTradingviewFormat))
+```
+
+If `session` is not in valid Trading View format, this line will throw
+an error with a message like the following
+
+```
+ArgumentError: (string) Expected session `not-a-real-timeframe` to be in Trading View format
 ```

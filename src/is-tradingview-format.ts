@@ -142,3 +142,21 @@ export function isTradingviewFormatMinutes(session: string): boolean {
 
     return false
 }
+
+/**
+ * Function for validating timeframes with `ow`.
+ *
+ * This function can be used to validate input with `ow`
+ *
+ * ```ts
+ * ow(session, ow.string.is(inTradingviewFormat))
+ * ```
+ *
+ * @remarks
+ * https://github.com/sindresorhus/ow
+ *
+ * @param session - Timeframe under test
+ * @returns True if timeframe is in valid Trading View format, else a
+ * string to be used as an error message by `ow`
+ */
+export const inTradingviewFormat = (session: string): boolean | string => isTradingviewFormat(session) || `Expected session \`${session}\` to be in Trading View format`
