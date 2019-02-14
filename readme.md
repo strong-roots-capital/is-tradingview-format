@@ -26,6 +26,8 @@ npm install @strong-roots-capital/is-tradingview-format
 
 ## Use
 
+### Binary validation
+
 ``` typescript
 import isTradingviewFormat from '@strong-roots-capital/is-tradingview-format'
 
@@ -38,6 +40,8 @@ isTradingviewFormat('1H')
 isTradingviewFormat('25H')
 //=> false
 ```
+
+### Specific validation
 
 Functions are also provided for testing if a session is a timeframe
 expressed in minutes, in hours, in days, in weeks, or in months
@@ -60,6 +64,8 @@ isTradingviewFormatHours('10')
 isTradingviewFormatHours('1D')
 //=> false
 ```
+
+## Input validation with `ow`
 
 A convenience function is provided for validating input with
 [ow](https://github.com/sindresorhus/ow)
