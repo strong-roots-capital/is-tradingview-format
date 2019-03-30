@@ -1,6 +1,6 @@
 {
   "name": "@strong-roots-capital/is-tradingview-format",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "Test to determine if session is denoted in valid Trading View format",
   "main": "dist/is-tradingview-format.js",
   "types": "dist/is-tradingview-format.d.ts",
