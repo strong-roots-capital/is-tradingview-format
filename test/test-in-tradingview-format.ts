@@ -12,9 +12,9 @@ const isInTradingviewFormat = (t: any, timeframe: string) => t.true(inTradingvie
 isInTradingviewFormat.title = (_ = '', timeframe: string) => `should recognize ${timeframe} as valid Trading View format`
 
 const isNotInTradingviewFormat = (t: any, timeframe: string) => {
-    const error = t.throws(() => {
-        ow(timeframe, ow.string.is(inTradingviewFormat))
-    }, Error)
+    const error = t.throws(
+        () => ow(timeframe, ow.string.is(inTradingviewFormat))
+    )
     t.is(error.name, 'ArgumentError')
 }
 isNotInTradingviewFormat.title = (_ = '', timeframe: string) => `should not recognize ${timeframe} as valid Trading View format`
