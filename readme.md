@@ -1,4 +1,13 @@
-# is-tradingview-format [![Build status](https://travis-ci.org/strong-roots-capital/is-tradingview-format.svg?branch=master)](https://travis-ci.org/strong-roots-capital/is-tradingview-format) [![npm version](https://img.shields.io/npm/v/@strong-roots-capital/is-tradingview-format.svg)](https://npmjs.org/package/@strong-roots-capital/is-tradingview-format) [![codecov](https://codecov.io/gh/strong-roots-capital/is-tradingview-format/branch/master/graph/badge.svg)](https://codecov.io/gh/strong-roots-capital/is-tradingview-format)
+# is-tradingview-format
+[![Build status][]](https://travis-ci.org/strong-roots-capital/is-tradingview-format)
+[![NPM Package][]](https://npmjs.org/package/@strong-roots-capital/is-tradingview-format)
+[![Code Coverage][]](https://codecov.io/gh/strong-roots-capital/is-tradingview-format)
+[![Dependencies][]](https://david-dm.org/strong-roots-capital/is-tradingview-format/status.svg)
+
+[Build Status]: https://travis-ci.org/strong-roots-capital/is-tradingview-format.svg?branch=master
+[NPM Package]: https://img.shields.io/npm/v/@strong-roots-capital/is-tradingview-format.svg
+[Code Coverage]: https://codecov.io/gh/strong-roots-capital/is-tradingview-format/branch/master/graph/badge.svg
+[Dependencies]: https://david-dm.org/strong-roots-capital/is-tradingview-format
 
 > Test to determine if session is denoted in valid Trading View format
 

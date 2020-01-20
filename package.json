@@ -40,9 +40,13 @@
     "homepage": "https://github.com/strong-roots-capital/is-tradingview-format",
     "devDependencies": {
         "@strong-roots-capital/list-tradingview-formats": "^1.0.5",
+        "@types/chai": "^4.2.7",
         "@types/node": "^13.1.8",
         "ava": "^3.0.0",
+        "ava-fast-check": "^1.1.2",
+        "chai": "^4.2.0",
         "codecov": "^3.6.1",
+        "fast-check": "^1.21.0",
         "npm-check-updates": "^4.0.1",
         "nyc": "^15.0.0",
         "ow": "^0.15.0",
@@ -54,7 +58,8 @@
     "ava": {
         "files": [
             "!dist/**/*.d.ts",
-            "test/**/test-*.ts"
+            "test/**/test-*.ts",
+            "spec/**/spec-*.ts"
         ],
         "extensions": [
             "ts"

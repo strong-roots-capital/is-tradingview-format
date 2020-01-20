@@ -159,4 +159,5 @@ export function isTradingviewFormatMinutes(session: string): boolean {
  * @returns True if timeframe is in valid Trading View format, else a
  * string to be used as an error message by `ow`
  */
-export const inTradingviewFormat = (session: string): boolean | string => isTradingviewFormat(session) || `Expected session \`${session}\` to be in Trading View format`
+export const inTradingviewFormat = (session: string): boolean | string =>
+    isTradingviewFormat(session) || `Expected session \`${session}\` to be in Trading View format`
