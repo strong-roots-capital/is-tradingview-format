@@ -1,80 +1,80 @@
 {
-  "name": "@strong-roots-capital/is-tradingview-format",
-  "version": "1.2.3",
-  "description": "Test to determine if session is denoted in valid Trading View format",
-  "main": "dist/is-tradingview-format.js",
-  "types": "dist/is-tradingview-format.d.ts",
-  "scripts": {
-    "prepublishOnly": "npm run compile",
-    "compile": "npm run clean && tsc",
-    "clean": "rm -rf  dist",
-    "ava": "ava -s -v",
-    "watch:ava": "nodemon -e 'ts json' -x 'npm run ava || true'",
-    "test": "nyc ava",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
-    "watch:test": "nodemon -e 'ts json' -x 'npm test || true'",
-    "typedoc": "typedoc",
-    "push-with-tags": "git push origin master && git push origin --tags",
-    "push-and-publish": "npm run push-with-tags && npm publish"
-  },
-  "files": [
-    "dist/src/"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/strong-roots-capital/is-tradingview-format.git"
-  },
-  "keywords": [
-    "trading",
-    "view",
-    "session",
-    "timeframe",
-    "format",
-    "time-series"
-  ],
-  "author": "Eric Crosson <eric.s.crosson@utexas.edu> (https://github.com/strong-roots-capital)",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/strong-roots-capital/is-tradingview-format/issues"
-  },
-  "homepage": "https://github.com/strong-roots-capital/is-tradingview-format",
-  "devDependencies": {
-    "@strong-roots-capital/list-tradingview-formats": "^1.0.5",
-    "@types/node": "^13.1.8",
-    "ava": "^3.0.0",
-    "codecov": "^3.6.1",
-    "npm-check-updates": "^4.0.1",
-    "nyc": "^15.0.0",
-    "ow": "^0.15.0",
-    "ts-node": "^8.6.2",
-    "typedoc": "^0.16.7",
-    "typedoc-plugin-markdown": "^2.2.16",
-    "typescript": "^3.7.5"
-  },
-  "ava": {
+    "name": "@strong-roots-capital/is-tradingview-format",
+    "version": "1.2.3",
+    "description": "Test to determine if session is denoted in valid Trading View format",
+    "main": "dist/is-tradingview-format.js",
+    "types": "dist/is-tradingview-format.d.ts",
+    "scripts": {
+        "prepublishOnly": "npm run compile",
+        "compile": "npm run clean && tsc",
+        "clean": "rm -rf  dist",
+        "ava": "ava -s -v",
+        "watch:ava": "nodemon -e 'ts json' -x 'npm run ava || true'",
+        "test": "nyc ava",
+        "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+        "watch:test": "nodemon -e 'ts json' -x 'npm test || true'",
+        "typedoc": "typedoc",
+        "push-with-tags": "git push origin master && git push origin --tags",
+        "push-and-publish": "npm run push-with-tags && npm publish"
+    },
     "files": [
-      "!dist/**/*.d.ts",
-      "test/**/*.ts"
+        "dist/src/"
     ],
-    "extensions": [
-      "ts"
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/strong-roots-capital/is-tradingview-format.git"
+    },
+    "keywords": [
+        "trading",
+        "view",
+        "session",
+        "timeframe",
+        "format",
+        "time-series"
     ],
-    "require": [
-      "ts-node/register"
-    ]
-  },
-  "nyc": {
-    "include": [
-      "src/*.ts"
-    ],
-    "extension": [
-      ".ts"
-    ],
-    "require": [
-      "ts-node/register"
-    ]
-  },
-  "publishConfig": {
-    "access": "public"
-  }
+    "author": "Eric Crosson <eric.s.crosson@utexas.edu> (https://github.com/strong-roots-capital)",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/strong-roots-capital/is-tradingview-format/issues"
+    },
+    "homepage": "https://github.com/strong-roots-capital/is-tradingview-format",
+    "devDependencies": {
+        "@strong-roots-capital/list-tradingview-formats": "^1.0.5",
+        "@types/node": "^13.1.8",
+        "ava": "^3.0.0",
+        "codecov": "^3.6.1",
+        "npm-check-updates": "^4.0.1",
+        "nyc": "^15.0.0",
+        "ow": "^0.15.0",
+        "ts-node": "^8.6.2",
+        "typedoc": "^0.16.7",
+        "typedoc-plugin-markdown": "^2.2.16",
+        "typescript": "^3.7.5"
+    },
+    "ava": {
+        "files": [
+            "!dist/**/*.d.ts",
+            "test/**/test-*.ts"
+        ],
+        "extensions": [
+            "ts"
+        ],
+        "require": [
+            "ts-node/register"
+        ]
+    },
+    "nyc": {
+        "include": [
+            "src/*.ts"
+        ],
+        "extension": [
+            ".ts"
+        ],
+        "require": [
+            "ts-node/register"
+        ]
+    },
+    "publishConfig": {
+        "access": "public"
+    }
 }
